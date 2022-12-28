@@ -62,18 +62,6 @@ export default function SinglePost() {
         ) : (
           <h1 className="singlePostTitle">
             {title}
-            {/* {post.username === user?.username && (
-              <div className="singlePostEdit">
-                <i
-                  className="singlePostIcon far fa-edit"
-                  onClick={() => setUpdateMode(true)}
-                ></i>
-                <i
-                  className="singlePostIcon far fa-trash-alt"
-                  onClick={handleDelete}
-                ></i>
-              </div>
-            )} */}
           </h1>
         )}
         <div className="singlePostInfo">

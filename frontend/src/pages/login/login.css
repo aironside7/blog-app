@@ -4,12 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-  background-size: cover;
+ 
 }
 
 .loginTitle {
@@ -35,7 +30,7 @@
 .loginButton {
   margin-top: 20px;
   cursor: pointer;
-  background-color: lightcoral;
+  background-color: rgb(130, 248, 167);
   border: none;
   color: white;
   border-radius: 10px;
@@ -44,17 +39,16 @@
 
 .loginButton:disabled{
   cursor: not-allowed;
-  background-color: rgb(252, 173, 173);
+  background-color: rgb(173, 252, 181);
 }
 
 .loginRegisterButton {
-  position: absolute;
-  top: 60px;
+  top: 90px;
   right: 20px;
-  background-color: teal;
+  background-color: rgb(22, 203, 203);
   cursor: pointer;
   border: none;
   padding: 10px;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }

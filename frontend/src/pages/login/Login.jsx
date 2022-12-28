@@ -2,7 +2,7 @@ import axios from "axios";
 import { useContext, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
-// import "./login.css";
+import "./login.css";
 
 export default function Login() {
   const userRef = useRef();
@@ -31,14 +31,14 @@ export default function Login() {
         <input
           type="text"
           className="loginInput"
-          placeholder="Enter your username..."
+          placeholder="username"
           ref={userRef}
         />
         <label>Password</label>
         <input
           type="password"
           className="loginInput"
-          placeholder="Enter your password..."
+          placeholder="password"
           ref={passwordRef}
         />
         <button className="loginButton" type="submit" disabled={isFetching}>

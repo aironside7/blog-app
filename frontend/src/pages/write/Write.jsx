@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-// import "./write.css";
+import "./write.css";
 import axios from "axios";
 import { Context } from "../../context/Context";
 
@@ -39,7 +39,6 @@ export default function Write() {
       <form className="writeForm" onSubmit={handleSubmit}>
         <div className="writeFormGroup">
           <label htmlFor="fileInput">
-            <i className="writeIcon fas fa-plus"></i>
           </label>
           <input
             type="file"
@@ -49,7 +48,7 @@ export default function Write() {
           />
           <input
             type="text"
-            placeholder="Title"
+            placeholder="Give Title for post"
             className="writeInput"
             autoFocus={true}
             onChange={e=>setTitle(e.target.value)}
@@ -57,14 +56,14 @@ export default function Write() {
         </div>
         <div className="writeFormGroup">
           <textarea
-            placeholder="Tell your story..."
+            placeholder="Write your blog"
             type="text"
             className="writeInput writeText"
             onChange={e=>setDesc(e.target.value)}
           ></textarea>
         </div>
         <button className="writeSubmit" type="submit">
-          Publish
+          Post Blog
         </button>
       </form>
     </div>

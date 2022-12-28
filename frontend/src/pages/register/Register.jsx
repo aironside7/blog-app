@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import "./register.css";
+import "./register.css";
 
 export default function Register() {
   const [username, setUsername] = useState("");
@@ -31,21 +31,21 @@ export default function Register() {
         <input
           type="text"
           className="registerInput"
-          placeholder="Enter your username..."
+          placeholder="Type username"
           onChange={(e) => setUsername(e.target.value)}
         />
         <label>Email</label>
         <input
           type="text"
           className="registerInput"
-          placeholder="Enter your email..."
+          placeholder="Type email"
           onChange={(e) => setEmail(e.target.value)}
         />
         <label>Password</label>
         <input
           type="password"
           className="registerInput"
-          placeholder="Enter your password..."
+          placeholder="Type password"
           onChange={(e) => setPassword(e.target.value)}
         />
         <button className="registerButton" type="submit">
