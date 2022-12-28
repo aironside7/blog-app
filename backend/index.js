@@ -8,7 +8,7 @@ const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
-const purl ="mongodb+srv://ani:ani@cluster0.hs2bme8.mongodb.net/blogappdataaaaa?retryWrites=true&w=majority"
+const purl ="mongodb+srv://ani:ani@cluster0.hs2bme8.mongodb.net/blogappdataapaa?retryWrites=true&w=majority"
 
 dotenv.config();
 app.use(express.json());
